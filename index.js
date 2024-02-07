@@ -3,11 +3,11 @@ function receive(number) {
         return null;
     } else if (isNaN(number) || !isFinite(number)){
         return 'NonFinite';
-    }  else if (number > 0) {
+    } else if (number > 0) {
         return 'Positive';
-    }   else if (number < 0) {
+    } else if (number < 0) {
         return 'Negative'
-    }else {
+    } else {
         return 'Zero';
     }
 }
