@@ -1,7 +1,7 @@
-function receive(number) {
+function numberCheck(number) {
     if (typeof number !== 'number'){
         return null;
-    } else if (isNaN(number) || !isFinite(number)){
+    } else if (!isFinite(number)){
         return 'NonFinite';
     } else if (number > 0) {
         return 'Positive';
@@ -12,4 +12,4 @@ function receive(number) {
     }
 }
 
-console.log(receive(0))
+console.log(numberCheck(0))
